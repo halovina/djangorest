@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     
     'home',
     'rest_framework',
+    'utils',
+    'borrower',
 ]
 
 MIDDLEWARE = [
