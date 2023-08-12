@@ -18,4 +18,10 @@ class Invoice(CreateUpdate):
     
     class Meta:
         db_table = 'borrower_loan_invoice'
+        
+    def __str__(self) -> str:
+        return "{} : {}".format(
+            self.amount,
+            self.invoice_date
+        )
 
