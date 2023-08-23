@@ -19,7 +19,7 @@ class LoanDetail(APIView):
         data = LoanSerializers(loan).data
         return Response(data)
     
-class CRLaonList(generics.ListCreateAPIView):
+class CRLoanList(generics.ListCreateAPIView):
     queryset = Loan.objects.all()
     serializer_class = CRUDLoanSerializers
     
